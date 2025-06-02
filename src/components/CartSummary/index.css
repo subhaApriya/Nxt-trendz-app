@@ -57,6 +57,52 @@
   outline: none;
   cursor: pointer;
 }
+.popup-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 350px;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+.payment-options label {
+  margin-bottom: 8px;
+  cursor: not-allowed;
+}
+
+.payment-options input:enabled {
+  cursor: pointer;
+}
+
+.order-summary {
+  background: #f8f8f8;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.confirm-order-button {
+  background: #34d399;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.confirm-order-button.disabled {
+  background: #c3cad9;
+  cursor: not-allowed;
+}
 
 @media screen and (max-width: 767px) {
   .d-sm-none {
